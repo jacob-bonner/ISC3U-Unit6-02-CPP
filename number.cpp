@@ -40,6 +40,7 @@ int main() {
     // Adding numbers to an array
     for (int counter = 0; counter < 10; counter++) {
         randomNumber = rand_r(&seed) % 100;
+        std::cout << randomNumber << std::endl;
         numberArray[counter] = randomNumber;
     }
 
@@ -47,6 +48,7 @@ int main() {
     largestNumber = Calculate(numberArray);
 
     // Output
+    std::cout << "" << std::endl;
     std::cout << "The largest number in the array is " \
               << largestNumber << std::endl;
 }
